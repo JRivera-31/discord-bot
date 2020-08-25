@@ -32,7 +32,7 @@ async def on_message(message):
 
 # for commands
 @client.command()
-async def test(ctx):
-    await ctx.send("This is a test")
+async def ping(ctx):
+    await ctx.send(f'Server ping: {round(client.latency * 1000)}ms')
 
 client.run(BOT_TOKEN)
