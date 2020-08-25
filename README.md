@@ -24,8 +24,8 @@ python BanditoBot.py
 ```
 
 ## Motivation
-AS an owner of a discord server and growing community
-I WANT a way to moderate my discord server without having to always actively be there
+AS an owner of a discord server and growing community <br>
+I WANT a way to moderate my discord server without having to always actively be there <br>
 SO THAT my users can have a pleasant and interactive experience
 
 
