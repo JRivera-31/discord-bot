@@ -33,6 +33,6 @@ async def on_message(message):
 # for commands
 @client.command()
 async def ping(ctx):
-    await ctx.send(f'Server ping: {round(client.latency * 1000)}ms')
+    await ctx.send(f'Bot ping: {round(client.latency * 1000)}ms')
 
 client.run(BOT_TOKEN)
