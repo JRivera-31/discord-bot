@@ -1,7 +1,6 @@
 # Discord Bot
 
 [![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/) <br>
-**CANNOT CONTINUE TO COMMIT WORK WIITHOUT EXPOSING TOKEN FOR NOW**
 A discord bot to help make my discord server more functional and to automate moderation. This will just make my life easier in the future. Into gaming and/or coding and want to join the community? Join discord here: https://discord.gg/rUbvb6 
 <br>
 
@@ -15,7 +14,7 @@ A discord bot to help make my discord server more functional and to automate mod
   * [Technologies](#technologies)
 
 ## Installation
-Download the files or clone the repo to your computer. Make sure you have python installed, in your terminal run:
+Download the files or clone the repo to your computer. You can use these files as a template for your bot but you will need to create your bot on discords developer portal. Make sure you have python installed, in your terminal run:
 
 ```
 pip install -U discord.py[voice]
