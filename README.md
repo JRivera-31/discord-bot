@@ -1,6 +1,7 @@
 # Discord Bot
-**CANNOT CONTINUE TO COMMIT WORK WIITHOUT EXPOSING TOKEN FOR NOW**
+
 [![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/) <br>
+**CANNOT CONTINUE TO COMMIT WORK WIITHOUT EXPOSING TOKEN FOR NOW**
 A discord bot to help make my discord server more functional and to automate moderation. This will just make my life easier in the future. Into gaming and/or coding and want to join the community? Join discord here: https://discord.gg/rUbvb6 
 <br>
 
