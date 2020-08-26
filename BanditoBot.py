@@ -17,6 +17,7 @@ client = commands.Bot(command_prefix="!")
 async def on_ready():
     print("Bot is ready")
 
+@client.event
 async def on_message(message):
     message.content = message.content.lower()
     
@@ -28,6 +29,15 @@ async def on_message(message):
     if str(message.channel) == "😂-memers" and str(message.content) != "":
         # delete the message
         await message.channel.purge(limit=1)
+
+@client.event
+async def on_member_join(member):
+    print(member.name + " joined the server")
+    try:
+        await member.send("Welcome to The Hole " + member.name + "! Please see the rules in " +
+        "announcements or type !rules in just-chatting")
+    except:
+        print("Couldn't send message")
 
 @client.command()
 async def ping(ctx):
@@ -41,7 +51,7 @@ async def rules(ctx):
     3. Feel free to link your stream when you go 
        live in streamers only.
     4. Feel free to post your clips in the clips 
-       channel. Anything that violates these rules will be 
+       channel. Anything that violates rules 1 & 2 will be 
        removed.
     5. Please use the appropriate text/voice channels!
 
