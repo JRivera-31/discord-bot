@@ -45,4 +45,4 @@ async def rules(ctx):
     Thank you!
     ```""")
 
-client.run('NzQ3ODg1NTYzNjgzNTM2OTE2.X0VYtQ.J1lyfiwlXjh1RtmEojc4HJtnSSk')
+client.run(BOT_TOKEN)
