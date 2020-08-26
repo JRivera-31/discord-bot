@@ -16,20 +16,7 @@ client = commands.Bot(command_prefix="!")
 @client.event
 async def on_ready():
     print("Bot is ready")
-
-@client.event
-async def on_message(message):
-    message.content = message.content.lower()
-    
-    # Make sure bot is not responding to itself
-    if message.author == client.user:
-        return
         
-    # check if a message with text was sent to memers channel
-    if str(message.channel) == "😂-memers" and str(message.content) != "":
-        # delete the message
-        await message.channel.purge(limit=1)
-
 @client.event
 async def on_member_join(member):
     print(member.name + " joined the server")

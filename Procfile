@@ -1,1 +1,1 @@
-worker: python:BanditoBot.py
+worker: python: BanditoBot.py
