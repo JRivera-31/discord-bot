@@ -6,6 +6,13 @@ from pathlib import Path
 from dotenv import load_dotenv
 from discord.ext import commands
 
+def read_token():
+    with open("token.txt", "r") as f:
+        lines = f.readlines()
+        return lines[0].strip()
+
+token = read_token()
+
 # Grab bot token from .env file
 dotenv_path = join(dirname(__file__), '.env')
 load_dotenv(dotenv_path)
@@ -45,4 +52,4 @@ async def rules(ctx):
     Thank you!
     ```""")
 
-client.run('NzQ3ODg1NTYzNjgzNTM2OTE2.X0VYtQ.J1lyfiwlXjh1RtmEojc4HJtnSSk')
+client.run(token)
