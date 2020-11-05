@@ -45,4 +45,12 @@ async def rules(ctx):
     Thank you!
     ```""")
 
+@client.event
+async def on_message(message):
+    emojis = ['\U0001F44D', "\U0001F44E"]
+
+    if message.content.startswith('poll:'):
+        for emoji in emojis:
+            await message.add_reaction(emoji)
+
 client.run(BOT_TOKEN)
